@@ -1,0 +1,31 @@
+import random 
+
+values  =['rock','paper','scissors' ]
+get = random.choice(values)
+print("enter your choice from rock,paper,scissor")
+userValue=str(input())
+if userValue in values:
+ print("you have choosen:", userValue)
+ print("I have choosen:",get)
+else:
+ print("choose correct value")
+if userValue == get:
+  print("It a tie:)")
+else:
+  if userValue == 'rock'and get == 'paper' :
+      print("I won;)")
+  else:
+    if userValue== 'rock' and get=='scissor' :
+        print("you won:)")
+    else:
+        if userValue=='paper' and get=='scissor' :
+            print(" I won;)")
+        else:
+            if userValue=='paper' and get== 'rock':
+               print("you won:)")
+            else:
+                if userValue=='scissor' and get=='paper':
+                    print("I won;)")
+                else:
+                    print("you won:)")
+                
